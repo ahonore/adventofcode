@@ -49,7 +49,7 @@ func f1(r io.Reader) int {
 			{x: -1, y: 0},
 			{x: 1, y: 0},
 		} {
-			newPoint := point{x: current.p.x + d.x, y: current.p.y - +d.y}
+			newPoint := point{x: current.p.x + d.x, y: current.p.y + d.y}
 			if newPoint.x < 0 || newPoint.x >= len(grid[0]) || newPoint.y < 0 || newPoint.y >= len(grid) {
 				continue
 			}
@@ -141,7 +141,7 @@ func f2(r io.Reader) int {
 			{x: -1, y: 0},
 			{x: 1, y: 0},
 		} {
-			newPoint := point{x: current.p.x + d.x, y: current.p.y - +d.y}
+			newPoint := point{x: current.p.x + d.x, y: current.p.y + d.y}
 			if newPoint.x < 0 || newPoint.x >= lenX || newPoint.y < 0 || newPoint.y >= lenY {
 				continue
 			}
