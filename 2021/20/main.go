@@ -80,10 +80,10 @@ func f1(r io.Reader) int {
 	sum := 0
 	for j := 2; j < len(inputImg)-2; j++ {
 		for i := 2; i < len(inputImg[0])-2; i++ {
-			fmt.Print(inputImg[j][i])
+			// fmt.Print(inputImg[j][i])
 			sum += inputImg[j][i]
 		}
-		fmt.Println()
+		// fmt.Println()
 	}
 	return sum
 }
@@ -159,10 +159,10 @@ func f2(r io.Reader) int {
 	sum := 0
 	for j := 50; j < len(inputImg)-50; j++ {
 		for i := 50; i < len(inputImg[0])-50; i++ {
-			fmt.Print(inputImg[j][i])
+			// fmt.Print(inputImg[j][i])
 			sum += inputImg[j][i]
 		}
-		fmt.Println()
+		// fmt.Println()
 	}
 	return sum
 }
